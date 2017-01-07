@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Strange Case of Dr Jekyll and Mr Hyde"
+title: "Pass Hunt"
 date: 2014-01-09 12:00:00
 categories: jekyll
 featured_image: /images/cover.jpg
