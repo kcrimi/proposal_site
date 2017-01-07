@@ -3,5 +3,5 @@ title: 'A Puzzling Proposal' # Your Title
 tagline: 'An extremely elaborate plot to trick Melissa into marrying me.' # A brief tagline for your site
 sidebar_image: /images/cover.jpg
 
-baseurl: /proposal/ # the subpath of your site, e.g. /blog/
+baseurl: / # the subpath of your site, e.g. /blog/
 google_maps_API: 'AIzaSyDZ7flGX4zBdJKVnJtqTbzsux-z4wQdkbs'
