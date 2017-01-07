@@ -66,7 +66,7 @@
         if (direction == 'up')
         plotMarker({{post.latlong[0]}},{{post.latlong[1]}});
       },
-      offset: 100
+      offset: '40%'
     });
 
     var waypointDown{{ forloop.index }} = new Waypoint({
@@ -75,7 +75,7 @@
         if (direction == 'down')
         plotMarker({{post.latlong[0]}},{{post.latlong[1]}});
       },
-      offset: '50%'
+      offset: '60%'
     });
   {% endfor %}
 </script>

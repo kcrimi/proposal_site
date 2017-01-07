@@ -64,9 +64,6 @@ blockquote {
   h1 {
     font-size: 26px;
   }
-  #home-subheader {
-    font-size: 12px;
-  }
 }
 
 /* Header & Article */
@@ -331,7 +328,7 @@ article .container {
     overflow: visible;
   }
   article .container {
-    padding-top: 245px;
+    padding-top: 235px;
   }
 }
 
