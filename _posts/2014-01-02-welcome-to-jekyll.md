@@ -2,7 +2,7 @@
 layout: post
 title: "Puzzle Box"
 categories: jekyll
-images: [/images/puzzle_box1.jpg]
+images: [puzzle_box1.jpg]
 latlong: [42.453, -71.396]
 ---
 

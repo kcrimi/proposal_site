@@ -2,7 +2,7 @@
 layout: post
 title: "Web Puzzle"
 categories: jekyll
-images: [/images/web_puzzle1.jpg]
+images: [web_puzzle1.jpg]
 latlong: [42.453, -71.396]
 ---
 

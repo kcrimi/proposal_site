@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<header id="home-sidebar" style="background-image: url({{ site.baseurl }}{{ site.sidebar_image }});">
+<header id="home-sidebar">
   <div id="map">
   </div>
 </header>
@@ -15,8 +15,8 @@ layout: default
   <div class="container">
     <ul class="posts">
       {% for post in site.posts reversed %}
-        <li class="elevated">
-          <div class="post-card-image" style="background-image: url({{ site.baseurl }}{{post.images[0]}})">
+        <li id="post-card-{{ forloop.index }}" class="elevated">
+          <div class="post-card-image" style="background-image: url({{ site.baseurl }}images/{{post.images[0]}})">
           </div>
           <div class="post-card-text">
             <h2><a href="{{ site.baseurl }}{{ post.url }}">{{forloop.index}}) {{ post.title }}</a></h2>

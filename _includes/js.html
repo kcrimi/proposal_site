@@ -4,6 +4,7 @@
       ['{{ post.title }}', {{ post.latlong[0] }}, {{ post.latlong[1] }}, {{ forloop.index }}],
     {% endfor %}
   ];
+  var map = null
   function initMap() {
 
     // Data for the markers consisting of a name, a LatLng and a zIndex for the
@@ -17,20 +18,21 @@
     }
     avgLat /= markers.length;
     avgLong /= markers.length;
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 5,
+    map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
       center: {lat: avgLat, lng: avgLong },
       mapTypeId: 'roadmap',
       mapTypeControl: false,
       streetViewControl: false,
       rotateControl: false
     });
-    setMarkers(map);
+    // setMarkers(map);
   }
-
-  
-
-
+</script>
+<script 
+  src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_API }}&callback=initMap">
+</script>
+<script>
   function setMarkers(map) {
     for (var i = 0; i < markers.length; i++) {
       var marker = markers[i];
@@ -42,8 +44,38 @@
       });
     }
   }
+  function plotMarker(lat, long) {
+    var location = {lat: lat, lng: long};
+    var googleMarker = new google.maps.Marker({
+      position: location,
+      map: map,
+      zIndex:100
+    });
+    map.setCenter(location);
+    map.setZoom(14);
+  }
 </script>
 
-<script async defer
-  src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_API }}&callback=initMap">
+
+<script type="text/javascript" src="{{ site.baseurl }}js/noframework.waypoints.min.js"></script>
+<script defer type="text/javascript">
+  {% for post in site.posts reversed %}
+    var waypointUp{{ forloop.index }} = new Waypoint({
+      element: document.getElementById('post-card-{{ forloop.index }}'),
+      handler: function(direction) {
+        if (direction == 'up')
+        plotMarker({{post.latlong[0]}},{{post.latlong[1]}});
+      },
+      offset: 100
+    });
+
+    var waypointDown{{ forloop.index }} = new Waypoint({
+      element: document.getElementById('post-card-{{ forloop.index }}'),
+      handler: function(direction) {
+        if (direction == 'down')
+        plotMarker({{post.latlong[0]}},{{post.latlong[1]}});
+      },
+      offset: '50%'
+    });
+  {% endfor %}
 </script>

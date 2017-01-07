@@ -2,7 +2,7 @@
 layout: post
 title: "App Download"
 categories: jekyll
-images: [/images/app_download1.jpg]
+images: [app_download1.jpg]
 latlong: [40.722, -73.993]
 ---
 
