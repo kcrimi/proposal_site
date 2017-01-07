@@ -51,7 +51,7 @@ blockquote {
   color: #666;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 824px) {
   h1 {
     font-size: 30px;
   }
@@ -60,15 +60,21 @@ blockquote {
   }
 }
 
+@media (max-width: 526px) {
+  h1 {
+    font-size: 26px;
+  }
+  #home-subheader {
+    font-size: 12px;
+  }
+}
+
 /* Header & Article */
 
 #home-header {
-  position: fixed;
-  top:0;
-  right:0;
   padding: 10px 100px;
-  left:33%;
   background-color: #ce1717;
+  z-index:100;
 }
 
 #home-subheader {
@@ -89,18 +95,13 @@ article {
   width: 100%;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 824px) {
   article {
     display: block;
   }
   .container {
-    padding: 25px;
+    padding: 5px;
   }
-}
-
-#map {
-  height: 100%;
-  width: 100%;
 }
 
 /* Header */
@@ -109,16 +110,14 @@ header {
   position: fixed;
   height: 100%;
   width: 35%;
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: hidden;
+  background-color:grey;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 824px) {
+  #home-header {
+    width: 100%;
+    padding: 10px;
+  }
   header {
     width: 100%;
   }
@@ -143,8 +142,20 @@ header .container {
   z-index: 1;
 }
 
+#map {
+  height: 170px;
+  width: 100%;
+}
 
-@media screen and (min-width: 961px){
+@media screen and (min-width: 825px){
+
+  #home-header {
+    position: fixed;
+    top:0;
+    right:0;
+    left:33%;
+  }
+
   #home-header .container {
     position: absolute;
     top: 50%;
@@ -152,6 +163,10 @@ header .container {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+  }
+
+  #map {
+    height: 100%;
   }
 
   header .container {
@@ -174,7 +189,7 @@ header .container {
   }
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 824px){
   #home-header .container {
     padding: 100px 50px;
   }
@@ -245,7 +260,7 @@ header ul.meta li span {
 
 /* Pagination */
 
-@media screen and (min-width: 961px){
+@media screen and (min-width: 825px){
   .pagination {
     position: absolute;
     right: 10px;
@@ -254,7 +269,7 @@ header ul.meta li span {
   }  
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 824px){
   .pagination {
     margin-top: 40px;
     padding: 0 10px;
@@ -301,7 +316,6 @@ header ul.meta li span {
 article {
   width: 65%;
   margin-left: 35%;
-  padding: 10px 50px;
   overflow-x: hidden;
 }
 
@@ -310,13 +324,20 @@ article .container {
   padding-top: 100px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 824px) {
   article {
     width: 100%;
+    margin-left: 0;
     overflow: visible;
   }
   article .container {
-    padding: 25px !important;
+    padding-top: 245px;
+  }
+}
+
+@media (min-width: 825px) {
+  article {
+    padding: 10px 50px;    
   }
 }
 
@@ -345,11 +366,18 @@ article li .post-card-text {
   padding: 0px 50px 1px 50px;
 }
 
-article
-
-@media (max-width: 960px) {
+@media (max-width: 824px) {
   article li {
     margin-left: 0;
+  }
+  article li .post-card-image {
+    height: 290px;
+  }
+}
+
+@media (max-width: 420px){
+  article li .post-card-image {
+    height: 200px;
   }
 }
 

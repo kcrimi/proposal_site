@@ -1,17 +1,17 @@
 ---
 layout: default
 ---
-<header id="home-sidebar">
-  <div id="map">
-  </div>
-</header>
-<article>
+<header>
   <div id="home-header" class="elevated">
     <h1>{{ site.title }}</h1>
     <span id="home-subheader">
       {{ site.tagline }}
     </span>
   </div>
+  <div id="map">
+  </div>
+</header>
+<article>
   <div class="container">
     <ul class="posts">
       {% for post in site.posts reversed %}
