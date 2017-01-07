@@ -9,6 +9,7 @@
 html,
 body {
   height: 100%;
+  background-color: #4a5d79;
 }
 
 body {
@@ -29,9 +30,9 @@ h2 {
 }
 
 h1 {
-  line-height: 1.3;
+  line-height: 1.2;
   font-weight: 600;
-  font-size: 60px;
+  font-size: 35px;
   color: #FFF;
 }
 
@@ -61,17 +62,30 @@ blockquote {
 
 /* Header & Article */
 
+#home-header {
+  position: fixed;
+  top:0;
+  right:0;
+  padding: 10px 100px;
+  left:33%;
+  background-color: #ce1717;
+}
+
+#home-subheader {
+  font-style: italic;
+  color: rgba(256,256,256,.80);
+}
+
 header,
 article {
   display: inline-block;
   vertical-align: top;
-  height: 100%;
   overflow: scroll;
   white-space: normal;
 }
 
 .container {
-  padding: 100px 50px;
+  padding: 35px;
   width: 100%;
 }
 
@@ -84,10 +98,16 @@ article {
   }
 }
 
+#map {
+  height: 100%;
+  width: 100%;
+}
+
 /* Header */
 
 header {
-  position: relative;
+  position: fixed;
+  height: 100%;
   width: 35%;
   background-repeat: no-repeat;
   background-position: center;
@@ -95,8 +115,6 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
   overflow: hidden;
 }
 
@@ -212,10 +230,6 @@ header ul.meta {
   }
 }
 
-#home-header ul.meta {
-  margin-top: 15px;
-}
-
 header ul.meta li {
   display: inline-block;
   margin-right: 25px;
@@ -286,12 +300,14 @@ header ul.meta li span {
 
 article {
   width: 65%;
+  margin-left: 35%;
+  padding: 10px 50px;
   overflow-x: hidden;
 }
 
 
 article .container {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 @media (max-width: 960px) {
@@ -309,10 +325,27 @@ article p {
 }
 
 article li {
-  margin-left: 3em;
-  margin-bottom: 9px;
+  background-color: #fff;
+  margin-top: 20px;
   list-style-type: disc;
 }
+
+article li .post-card-image {
+  height: 325px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+article li .post-card-text {
+  padding: 0px 50px 1px 50px;
+}
+
+article
 
 @media (max-width: 960px) {
   article li {
@@ -344,4 +377,9 @@ ul.posts .meta {
 
 ul.posts p {
   margin-bottom: 36px;
+}
+
+/* Effects */
+.elevated {
+  box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.59);
 }
