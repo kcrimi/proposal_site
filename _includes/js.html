@@ -1,18 +1,46 @@
 <script>
+  var markers = [
+    {% for post in site.posts %}
+      ['{{ post.title }}', {{ post.latlong[0] }}, {{ post.latlong[1] }}, {{ forloop.index }}],
+    {% endfor %}
+  ];
   function initMap() {
-    var uluru = {lat: 29.95, lng: -90.07};
+
+    // Data for the markers consisting of a name, a LatLng and a zIndex for the
+    // order in which these markers should display on top of each other.
+
+    var avgLat = 0
+    var avgLong = 0;
+    for (var i = 0; i < markers.length; i++) {
+      avgLat += markers[i][1];
+      avgLong += markers[i][2];
+    }
+    avgLat /= markers.length;
+    avgLong /= markers.length;
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 14,
-      center: uluru,
+      zoom: 5,
+      center: {lat: avgLat, lng: avgLong },
       mapTypeId: 'roadmap',
       mapTypeControl: false,
       streetViewControl: false,
       rotateControl: false
     });
-    var marker = new google.maps.Marker({
-      position: uluru,
-      map: map
-    });
+    setMarkers(map);
+  }
+
+  
+
+
+  function setMarkers(map) {
+    for (var i = 0; i < markers.length; i++) {
+      var marker = markers[i];
+      var googleMarker = new google.maps.Marker({
+        position: {lat: marker[1], lng: marker[2]},
+        map: map,
+        title: marker[0],
+        zIndex: marker[3]
+      });
+    }
   }
 </script>
 

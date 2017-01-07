@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Muffaletta"
-date: 2014-01-07 12:00:00
+title: "App Download"
 categories: jekyll
-featured_image: /images/cover.jpg
+images: [/images/app_download1.jpg]
+latlong: [40.722, -73.993]
 ---
 
 Strange Case of Dr Jekyll and Mr Hyde is the original title of a novella written by the Scottish author [Robert Louis Stevenson]() that was first published in 1886. The work is commonly known today as The Strange Case of Dr. Jekyll and Mr. Hyde, Dr. Jekyll and Mr. Hyde, or simply Jekyll & Hyde. It is about a London lawyer named Gabriel John Utterson who investigates strange occurrences between his old friend, Dr. Henry Jekyll, and the evil Edward Hyde.

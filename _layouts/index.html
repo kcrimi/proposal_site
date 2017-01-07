@@ -14,15 +14,12 @@ layout: default
   </div>
   <div class="container">
     <ul class="posts">
-      {% for post in site.posts %}
+      {% for post in site.posts reversed %}
         <li class="elevated">
-          <div class="post-card-image" style="background-image: url({{ site.baseurl }}{{post.featured_image}})">
+          <div class="post-card-image" style="background-image: url({{ site.baseurl }}{{post.images[0]}})">
           </div>
           <div class="post-card-text">
             <h2><a href="{{ site.baseurl }}{{ post.url }}">{{forloop.index}}) {{ post.title }}</a></h2>
-            <span class="meta">
-              {{ post.date | date_to_string }}
-            </span>
             {{ post.excerpt }}
           </div>
         </li>
