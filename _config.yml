@@ -5,3 +5,4 @@ sidebar_image: /images/cover.jpg
 
 baseurl: / # the subpath of your site, e.g. /blog/
 google_maps_API: 'AIzaSyDZ7flGX4zBdJKVnJtqTbzsux-z4wQdkbs'
+google-tracking-id: 'UA-71210506-5'
