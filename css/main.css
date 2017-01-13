@@ -420,6 +420,25 @@ ul.posts p {
   height: 400px;
 }
 
+.post_button {
+  background-color: rgba(0, 0, 0, 0.57);
+}
+
+.post-article {
+  background-color: #fffaf0;
+}
+
+article h2 {
+  margin-bottom: 0px;
+  font-size: 20px;
+  color: #ce1717;
+}
+
+article blockquote {
+  margin: 20px 1em;
+  background-color: antiquewhite;
+}
+
 /* Effects */
 .elevated {
   box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.59);

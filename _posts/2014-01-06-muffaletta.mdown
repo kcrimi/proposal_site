@@ -1,7 +1,0 @@
----
-layout: post
-title: "Muffaletta"
-categories: jekyll
-images: [muffaletta1.jpg]
-latlong: [29.958636, -90.060937]
----
