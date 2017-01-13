@@ -2,6 +2,7 @@
 title: 'A Puzzling Proposal' # Your Title
 tagline: 'An extremely elaborate plot to trap a cat' # A brief tagline for your site
 sidebar_image: /images/cover.jpg
+excerpt_separator: <!--excerpt-->
 
 baseurl: / # the subpath of your site, e.g. /blog/
 google_maps_API: 'AIzaSyDZ7flGX4zBdJKVnJtqTbzsux-z4wQdkbs'

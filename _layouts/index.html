@@ -15,14 +15,16 @@ layout: default
   <div class="container">
     <ul class="posts">
       {% for post in site.posts reversed %}
-        <li id="post-card-{{ forloop.index }}" class="elevated">
-          <div class="post-card-image" style="background-image: url({{ site.baseurl }}images/{{post.images[0]}})">
-          </div>
-          <div class="post-card-text">
-            <h2><a href="{{ site.baseurl }}{{ post.url }}">{{forloop.index}}) {{ post.title }}</a></h2>
-            {{ post.excerpt }}
-          </div>
-        </li>
+        <a href="{{ post.url }}">
+          <li id="post-card-{{ forloop.index }}" class="elevated">
+            <div class="post-card-image" style="background-image: url({{ site.baseurl }}images/{{post.images[0]}})">
+            </div>
+            <div class="post-card-text">
+              <h2><a href="{{ site.baseurl }}{{ post.url }}">{{forloop.index}}) {{ post.title }}</a></h2>
+              {{ post.excerpt }}
+            </div>
+          </li>
+        </a>
       {% endfor %}
     </ul>
   </div>
