@@ -10,6 +10,7 @@ At this point, Melissa thinks the scavenger hunt is over and the dinner is her f
 <!--excerpt-->
 
 ## Reveillon
+
 ### Clue Text
 >It looks like your victory celebration is a reveillon dinner! This is quite fitting since a reveillon is a traditional celebration dinner during the holiday season in New Orleans that is typically offered well into the wee hours to feed all the people getting out of midnight mass. Ours won’t be nearly that late but it’ll still have the same famous traditional creole dishes. 
 

@@ -11,6 +11,7 @@ At 10am on Dec 29th, Melissa's scavenger hunt is activated, telling her that som
 <!--excerpt-->
 
 ## Your Quest Begins
+
 ### Clue Text
 ><p>Your time has come! Somewhere in your apartment, we have hidden your first clue along with something that will help you on your investigation.</p><p>If you have trouble finding it, maybe you should get some caffeine in your system to get your clue detectors up and running.</p>
 
