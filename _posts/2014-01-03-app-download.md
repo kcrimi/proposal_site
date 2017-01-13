@@ -6,7 +6,7 @@ images: [app_download1.jpg]
 latlong: [40.722, -73.993]
 ---
 
-Upon Finishing the web puzzle, Melissa receives an E-mail from Mark Crowton, the CEO of Sc4venger Hunt, asking her to try out the beta release of their new Android App which will be a real-life personalized puzzle experience. Upon downloading, the first clue reveals that this scavenger hunt will take place in New Orleans on Dec 29th and requires her to put in her airline confirmation code to continue. 
+Upon finishing the web puzzle, Melissa receives an E-mail from Mark Crowton, the CEO of Sc4venger Hunt, asking her to try out the beta release of their new android app which will be a real-life personalized puzzle experience. Upon downloading, the first clue reveals that this scavenger hunt will take place in New Orleans on Dec 29th and requires her to put in her airline confirmation code to continue. 
 
 <!--excerpt-->
 

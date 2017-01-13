@@ -33,5 +33,10 @@ layout: default
 <article class="post-article">
   <div class="container">
     {{ content }}
+    <div class="post-image-list">
+      {% for image in page.images %}
+        <a href="{{site.baseurl}}images/{{ page.images[forloop.index0]}}"><img class="post-image elevated" src="{{site.baseurl}}images/{{ page.images[forloop.index0]}}"></a>
+      {% endfor %}
+    </div>
   </div>
 </article>

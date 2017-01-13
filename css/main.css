@@ -417,6 +417,10 @@ ul.posts p {
 .post-header-image {
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   height: 400px;
 }
 
@@ -437,6 +441,11 @@ article h2 {
 article blockquote {
   margin: 20px 1em;
   background-color: antiquewhite;
+}
+
+.post-image {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 /* Effects */
