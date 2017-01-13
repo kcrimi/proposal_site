@@ -413,6 +413,13 @@ ul.posts p {
   margin-bottom: 36px;
 }
 
+/* Posts */
+.post-header-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
 /* Effects */
 .elevated {
   box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.59);

@@ -1,9 +1,14 @@
 <script>
   var markers = [
-    {% for post in site.posts %}
-      ['{{ post.title }}', {{ post.latlong[0] }}, {{ post.latlong[1] }}, {{ forloop.index }}],
-    {% endfor %}
+    {% if page.title == "index" %}
+      {% for post in site.posts %}
+        ['{{ post.title }}', {{ post.latlong[0] }}, {{ post.latlong[1] }}, {{ forloop.index }}],
+      {% endfor %}
+    {% else %}
+      ['{{ page.title }}', {{ page.latlong[0] }}, {{ page.latlong[1] }}, 1]
+    {% endif %}
   ];
+
   var map = null
   function initMap() {
 
@@ -53,34 +58,43 @@
       map: map,
       zIndex:100
     });
-    map.setCenter(location);
+    {% if page.title == "index" %}
+      map.setCenter(location);
+    {% else %}
+      map.setCenter({lat:lat-.01, lng:long});
+    {% endif %}
     map.setZoom(14);
   }
 </script>
 
+{% if page.title == "index" %}
+  <script type="text/javascript" src="{{ site.baseurl }}js/noframework.waypoints.min.js"></script>
+  <script defer type="text/javascript">
+    {% for post in site.posts reversed %}
+      var waypointUp{{ forloop.index }} = new Waypoint({
+        element: document.getElementById('post-card-{{ forloop.index }}'),
+        handler: function(direction) {
+          if (direction == 'up')
+          plotMarker({{post.latlong[0]}},{{post.latlong[1]}});
+        },
+        offset: '40%'
+      });
 
-<script type="text/javascript" src="{{ site.baseurl }}js/noframework.waypoints.min.js"></script>
-<script defer type="text/javascript">
-  {% for post in site.posts reversed %}
-    var waypointUp{{ forloop.index }} = new Waypoint({
-      element: document.getElementById('post-card-{{ forloop.index }}'),
-      handler: function(direction) {
-        if (direction == 'up')
-        plotMarker({{post.latlong[0]}},{{post.latlong[1]}});
-      },
-      offset: '40%'
-    });
-
-    var waypointDown{{ forloop.index }} = new Waypoint({
-      element: document.getElementById('post-card-{{ forloop.index }}'),
-      handler: function(direction) {
-        if (direction == 'down')
-        plotMarker({{post.latlong[0]}},{{post.latlong[1]}});
-      },
-      offset: '60%'
-    });
-  {% endfor %}
-</script>
+      var waypointDown{{ forloop.index }} = new Waypoint({
+        element: document.getElementById('post-card-{{ forloop.index }}'),
+        handler: function(direction) {
+          if (direction == 'down')
+          plotMarker({{post.latlong[0]}},{{post.latlong[1]}});
+        },
+        offset: '60%'
+      });
+    {% endfor %}
+  </script>
+{% else %}
+  <script type="text/javascript">
+    plotMarker({{page.latlong[0]}}, {{ page.latlong[1]}});
+  </script>
+{% endif %}
 
 {% if site.google-tracking-id %}
 
