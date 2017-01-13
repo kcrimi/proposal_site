@@ -11,6 +11,7 @@ Upon finishing the web puzzle, Melissa receives an E-mail from Mark Crowton, the
 <!--excerpt-->
 
 ## Welcome
+
 ### Clue Text
 ><p>Welcome to the hunt for your gift. We assure you it's a very sweet, thoughtful present but unfortunately it's not nearby at all.</p><p>We’ve been able to track the present down to New Orleans somewhere but you’re going to have to follow the clues to track it down. Time to book your tickets and pack your bags!</p><p>Please enter your flight confirmation code so we can activate your hunt.</p>
 
