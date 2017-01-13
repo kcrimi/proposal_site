@@ -2,7 +2,7 @@
 layout: post
 title: "Muffaletta"
 categories: clues
-images: [muffaletta1.jpg]
+images: [muffaletta1.jpg, mufaletta2.jpg, zapps.jpg]
 latlong: [29.958636, -90.060937]
 clues:
   - title: "Find Central Grocery"

@@ -2,7 +2,7 @@
 layout: post
 title: "Puzzle Box"
 categories: clues
-images: [puzzle_box1.jpg]
+images: [puzzle_box1.jpg, puzzle_box2.jpg, voucher.jpg]
 latlong: [42.453, -71.396]
 ---
 

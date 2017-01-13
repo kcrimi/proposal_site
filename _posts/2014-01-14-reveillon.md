@@ -2,7 +2,7 @@
 layout: post
 title: "Reveillon Dinner"
 categories: clues
-images: [reveillon1.jpg]
+images: [reveillon1.jpg, reveillon2.jpg, reveillon3.jpg, reveillon4.jpg, reveillon5.jpg,]
 latlong: [29.956596, -90.068157]
 ---
 

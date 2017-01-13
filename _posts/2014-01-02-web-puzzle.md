@@ -2,7 +2,7 @@
 layout: post
 title: "Web Puzzle"
 categories: clues
-images: [web_puzzle1.jpg]
+images: [web_puzzle1.jpg, web_puzzle2.jpg]
 latlong: [42.453, -71.396]
 ---
 
