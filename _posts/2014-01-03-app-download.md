@@ -19,4 +19,4 @@ Upon finishing the web puzzle, Melissa receives an E-mail from Mark Crowton, the
 GDGPDC
 
 ### Response
->Great! We’ll contact you again on Dec 29th. So you can plan, investigations usually take the better part of the day and involve lots of good and drink. You should also be sure to pack a “Business Casual” outfit (shirt and slacks required for men).
+>Great! We’ll contact you again on Dec 29th. So you can plan, investigations usually take the better part of the day and involve lots of food and drink. You should also be sure to pack a “Business Casual” outfit (shirt and slacks required for men).

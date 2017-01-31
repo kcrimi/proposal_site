@@ -6,7 +6,7 @@ images: [jazzy_pass1.jpg]
 latlong: [29.969466, -90.066875]
 ---
 
-At 10am on Dec 29th, Melissa's scavenger hunt is activated, telling her that somewhere in our Airbnb is a care package has been hidden with something that will help her on her trip. She finds 2 jazzy passes ( 1 day metro passes) and a puzzle piece clue with the word `Muffaletta` on it.
+At 10am on Dec 29th, Melissa's scavenger hunt is activated, telling her that somewhere in our Airbnb is a care package has been hidden with something that will help her on her trip. She finds 2 Jazzy passes (1 day metro passes) and a puzzle piece clue with the word `Muffaletta` on it.
 
 <!--excerpt-->
 

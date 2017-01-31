@@ -6,7 +6,7 @@ images: [reveillon1.jpg, reveillon2.jpg, reveillon3.jpg, reveillon4.jpg, reveill
 latlong: [29.956596, -90.068157]
 ---
 
-At this point, Melissa thinks the scavenger hunt is over and the dinner is her final reward. The restaurant is one of the old classic creole restaurants in the French Quarter that is currently serving their Revellion menu, a celebretory dinner traditionally served around the holidays with typically creole dishes. We enjoy the dinner and eat far too much, as usual. 
+At this point, Melissa thinks the scavenger hunt is over and the dinner is her final reward. The restaurant is one of the old classic creole restaurants in the French Quarter that is currently serving their Reveillon menu, a celebretory dinner traditionally served around the holidays with typically creole dishes. We enjoy the dinner and eat far too much, as usual. 
 <!--excerpt-->
 
 ## Reveillon
